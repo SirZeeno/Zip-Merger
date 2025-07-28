@@ -16,8 +16,9 @@ public abstract class ZipHandler
         ProgressBarSettings progressBarSettings = new ProgressBarSettings(selectedPaths.Count);
         mainViewModel.AddProgressItem(progressBarSettings);
         mainViewModel.TotalPasses = (selectedPaths.Count * 2) + selectedPaths.Count; // 2 passes per zip to extract and merge then 1 pass per two sets of zips for merging the extracted folders plus 1 for the final compression
-        string destinationDirectory = outputPath ?? Path.Combine(Path.GetDirectoryName(Environment.CurrentDirectory)!, "ExtractedZips");
-
+        string destinationDirectory = Path.Combine(Path.GetDirectoryName(Environment.CurrentDirectory)!, "Extracted");
+        ConsoleExt.WriteLineWithPretext($"Destination Directory: {destinationDirectory}");
+        
         try
         {
             
@@ -27,7 +28,8 @@ public abstract class ZipHandler
                 progressBarSettings.ProgressValue++;
                 mainViewModel.CurrentPass++;
             }
-            MergeAndZip(Directory.GetDirectories(destinationDirectory).ToList(), outputPath!, mainViewModel);
+            outputPath ??= Path.Combine(Path.GetDirectoryName(Environment.CurrentDirectory)!, "Output");
+            MergeZipFolders(Directory.GetDirectories(destinationDirectory).ToList(), outputPath, mainViewModel);
             mainViewModel.IsCompressionLevelEnabled = true;
         }             
         catch (Exception ex)
@@ -100,7 +102,7 @@ public abstract class ZipHandler
         }
     }
 
-    private static void MergeAndZip(List<string> sourceDirectories, string zipFilePath, MainViewModel mainViewModel)
+    private static void MergeZipFolders(List<string> sourceDirectories, string zipFilePath, MainViewModel mainViewModel)
     {
         string folderMergeDirectory = sourceDirectories[0];
         for (int i = 1; i < sourceDirectories.Count; i++)
@@ -110,6 +112,12 @@ public abstract class ZipHandler
         }
         
         CompressZip(folderMergeDirectory, zipFilePath, mainViewModel);
+        mainViewModel.CurrentPass++;
+    }
+
+    private static void ZipFolder(string sourceDirectory, string zipFilePath, MainViewModel mainViewModel)
+    {
+        CompressZip(sourceDirectory, zipFilePath, mainViewModel);
         mainViewModel.CurrentPass++;
     }
 }
