@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ZipMerger/App.axaml" value="ZipMerger.Browser/ZipMerger.Browser.csproj" />
+        <entry key="ZipMerger/Views/MainView.axaml" value="ZipMerger.Desktop/ZipMerger.Desktop.csproj" />
+        <entry key="ZipMerger/Views/MainWindow.axaml" value="ZipMerger.Desktop/ZipMerger.Desktop.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

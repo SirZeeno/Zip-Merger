@@ -3,14 +3,143 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:ZipMerger.ViewModels"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             xmlns:zipMerger="clr-namespace:ZipMerger"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="ZipMerger.Views.MainView"
              x:DataType="vm:MainViewModel">
   <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
     <vm:MainViewModel />
   </Design.DataContext>
-
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+  <UserControl.DataContext>
+    <vm:MainViewModel />
+  </UserControl.DataContext>
+  <UserControl.Background>
+    <SolidColorBrush Color="#191919" />
+  </UserControl.Background>
+  <UserControl.Styles>
+    <!-- 1. Generic hover for all HyperlinkButtons -->
+    <Style Selector="HyperlinkButton:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="BorderBrush" Value="Transparent"/>
+      <Setter Property="Foreground" Value="#96b6d0"/>
+    </Style>
+  </UserControl.Styles>
+  
+  <Grid VerticalAlignment="Stretch" RowDefinitions="Auto,Auto,Auto,Auto,*,Auto" Background="{StaticResource BackgroundColor}" Margin="5">
+    
+    <!-- I want to add a top row to this with some menu buttons and a footer with project info -->
+    <Grid Grid.Row="0" ColumnDefinitions="*,Auto,Auto,Auto,Auto" Margin="0,0,0,5" VerticalAlignment="Top" Height="30">
+      <TextBox Grid.Column="0" Watermark="Path to Files" Text="{CompiledBinding PathTextBox}" Margin="0,0,5,0"/>
+      <Button Grid.Column="1" Command="{CompiledBinding AddPathToQueueCommand}" CommandParameter="{CompiledBinding PathTextBox}" Margin="0,0,5,0">
+        <StackPanel Orientation="Horizontal">
+          <ui:SymbolIcon Symbol="Add" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+          <TextBlock Text="Add"/>
+        </StackPanel>
+      </Button>
+      <Button Grid.Column="2" Command="{CompiledBinding BrowseFilesCommand}" Margin="0,0,5,0">
+        <StackPanel Orientation="Horizontal">
+          <ui:SymbolIcon Symbol="Folder" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+          <TextBlock Text="Browse File(s)"/>
+        </StackPanel>
+      </Button>
+      <Button Grid.Column="3" Command="{CompiledBinding StartMergeCommand}">
+        <StackPanel Orientation="Horizontal">
+          <ui:SymbolIcon Symbol="RotateClockwise" FontSize="20" Foreground="White" HorizontalAlignment="Center" Margin="0,0,5,0"/>
+          <TextBlock Text="Merge"/>
+        </StackPanel>
+      </Button>
+      <ui:SymbolIcon Grid.Column="4" Symbol="Help" FontSize="20" Foreground="White" HorizontalAlignment="Center" >
+        <ToolTip.Tip>
+          <TextBlock Text="The selected file(s) will be merged into the first zip file in the list. The output file will be a single zip file, and placed in the output folder. The Zip files will be deduplicated." Foreground="LightGray" Margin="5,0,0,0" FontSize="10"/>
+        </ToolTip.Tip>
+      </ui:SymbolIcon>
+    </Grid>
+    
+    <ScrollViewer Grid.Row="1" Background="{StaticResource BackgroundColor}" BorderBrush="Black" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto" MaxHeight="120">
+      <ItemsControl ItemsSource="{CompiledBinding SelectedPathDisplay}">
+        <ItemsControl.ItemsPanel>
+          <ItemsPanelTemplate>
+            <StackPanel Orientation="Vertical" Spacing="5"/>
+          </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate>
+          <DataTemplate DataType="zipMerger:ImportSettings">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Grid.Column="0" Foreground="LightGray" FontSize="15" Margin="5,0">
+                <Run Text="Paths: " Foreground="Gray"/>
+                <Run Text="{CompiledBinding SelectedPath}"/>
+              </TextBlock>
+              <!-- ReSharper disable once Xaml.PossibleNullReferenceException -->
+              <Button Grid.Column="1" HorizontalAlignment="Right" Command="{CompiledBinding $parent[ItemsControl].((vm:MainViewModel)DataContext).RemovePathFromQueueCommand}" CommandParameter="{CompiledBinding}">
+                <ui:SymbolIcon Symbol="Remove" />
+              </Button>
+            </Grid>
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+    </ScrollViewer>
+    
+    <StackPanel Grid.Row="2" Spacing="5" VerticalAlignment="Top">
+      <Separator HorizontalAlignment="Stretch"/>
+      <Grid HorizontalAlignment="Stretch" ColumnDefinitions="Auto,Auto,*,Auto" Margin="0,0,0,5">
+        <TextBlock Grid.Column="0" Text="Output Folder: "  VerticalAlignment="Center" Foreground="Gray"/>
+        <TextBlock Grid.Column="1" Text="{CompiledBinding OutputPath}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Grid.Column="2" Command="{CompiledBinding BrowseFolderCommand}" Margin="0,0,5,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+          <StackPanel Orientation="Horizontal">
+            <ui:SymbolIcon Symbol="Folder" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="Select Output Folder" />
+          </StackPanel>
+        </Button>
+        <ComboBox Grid.Column="3" Margin="0,0,5,0" ItemsSource="{CompiledBinding Options}" SelectedItem="{Binding SelectedOption, Mode=TwoWay}" IsEnabled="{CompiledBinding IsCompressionLevelEnabled}">
+          
+        </ComboBox>
+      </Grid>
+      <Separator HorizontalAlignment="Stretch"/>
+    </StackPanel>
+    
+    <StackPanel Grid.Row="3" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch"> <!-- Progress Bar Stack Panel -->
+      <StackPanel Orientation="Horizontal">
+        <TextBlock Margin="0,0,10,0">
+          <Run Text="Passes: " />
+          <Run Text="{CompiledBinding CurrentPass}"/>
+          <Run Text="/" />
+          <Run Text="{CompiledBinding TotalPasses}"/>
+        </TextBlock> <!-- Number of Passes or steps already done -->
+        <TextBlock>
+          <Run Text="File: "/>
+          <Run Text="{CompiledBinding CurrentFile}"/>
+        </TextBlock> <!-- The file its currently working on -->
+      </StackPanel>
+      <ItemsControl ItemsSource="{CompiledBinding ProgressBarDisplay}">
+        <ItemsControl.ItemsPanel>
+          <ItemsPanelTemplate>
+            <StackPanel Orientation="Vertical" Spacing="5"/>
+          </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate>
+          <DataTemplate DataType="zipMerger:ProgressBarSettings">
+            <ProgressBar Height="10" Minimum="0" Maximum="{CompiledBinding ProgressMaxValue}" Value="{CompiledBinding ProgressValue}" IsVisible="{CompiledBinding IsProgressVisible}"/>
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+    </StackPanel>
+    
+    <TextBox Grid.Row="4" x:Name="ConsoleBox"
+               Text="{Binding ConsoleOutput}"
+               AcceptsReturn="True"
+               IsReadOnly="True"
+               Focusable="False"
+               IsHitTestVisible="False"
+               BorderThickness="0"
+               Cursor="Arrow"
+               FontFamily="Consolas"
+               FontSize="13"
+               VerticalAlignment="Stretch"/>
+    
+    <StackPanel Grid.Row="5">
+      <TextBlock Text="ZipMerger v1.0" HorizontalAlignment="Center" FontSize="10" Foreground="DimGray"/>
+      <HyperlinkButton Command="{CompiledBinding OpenHyperlinkCommand}" CommandParameter="https://github.com/SirZeeno/Zip-Merger" HorizontalAlignment="Center" FontSize="10" Foreground="DimGray" Padding="0">GitHub</HyperlinkButton>
+    </StackPanel>
+  </Grid>
 </UserControl>

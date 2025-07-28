@@ -24,4 +24,1026 @@
     <ItemGroup>
         <ProjectReference Include="..\ZipMerger\ZipMerger.csproj"/>
     </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Test\Test 1 0.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 1 1.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 1 3.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 1 5.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 1 7.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 1 9.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 2 0.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 2 1.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 2 3.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 2 5.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 2 7.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test\Test 2 9.zip">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\4.3.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\72850_screenshots_2013-09-23_00007.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\2357570_1.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\290922655_18864020771_1725040908272.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\1461047469_ScreenShot336.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\1683711014_new_Grounded_2023.05.10-15.22.55.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\1701899119_new_Download (1).jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\1739193474_new_Без названия (4).jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\1741564203_new_Screenshot_262.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\certificate.pdf">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Clipboard Image.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\FB17FF5B-E49D-41F0-8C32-812DED83855A.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\image0.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_0888.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_1198.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2062.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2063.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2476.HEIC">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2476.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2662.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2663.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2664.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\IMG_2665.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\microplastic-main-image-1872084848.jpg">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.10.88.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.11.69.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.11.99.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.12.21.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.12.52.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.12.76.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.16.55.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.16.79.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.44.17.05.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.47.12.97.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\No Man's Sky Screenshot 2021.04.02 - 17.59.21.01.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\qbittorrent_5.0.4_x64_setup.exe">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Resume.pdf">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\revosetup.exe">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-05 020224.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-05 193527.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-06 221021.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-10 033736.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-11 231059.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-12 051641.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-13 001540.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-13 001554.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-13 003842.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-13 010515.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-13 011200.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-13 230650.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-14 005428.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-14 230732.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-17 154536.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-20 013802.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-20 013947.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-20 172833.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-21 180216.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-21 190252.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-21 191920.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-24 035037.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-24 204617.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-26 221309.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-04-26 221548.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-01 213030.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-03 180812.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-04 080633.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-04 081127.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-05 114225.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-05 114231.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-08 103522.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-13 191245.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-14 015249.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-14 225846.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-20 180742.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-05-26 221252.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-03 013704.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-04 004043.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-04 004703.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-07 041412.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-07 074053.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-08 175814.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-08 180404.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-09 143946.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-09 192731.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-09 192811.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-13 080453.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-13 102517.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-14 165347.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-14 165405.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-14 165413.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-17 150906.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-20 211237.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-22 110458.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-22 221432.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-22 221443.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-24 143650.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-24 143747.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-24 144907.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-24 230001.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 003655.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 004225.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 004752.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 005540.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 005550.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 010055.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 010117.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 010143.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 193119.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-25 214146.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-26 015803.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-06-26 051307.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-03 020501.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-05 042510.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-06 103536.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-06 155935.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-07 181314.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-08 231851.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-08 232211.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-12 195942.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-13 121028.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-14 211823.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-07-24 233435.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-05 183229.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-05 205509.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-05 213725.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-05 213942.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-05 215052.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-18 151412.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-20 105248.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-20 132701.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-26 131001.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-08-30 134540.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-06 002407.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 174140.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 181157.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 181635.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 181834.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 181903.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 182443.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 183216.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 183601.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-07 194602.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-10 161511.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-12 190703.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-12 190732.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-14 024109.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 081913.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 082651.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 082813.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 083932.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 084218.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 084456.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 085013.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 090021.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 092207.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-15 094113.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-19 144416.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-20 165711.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-20 165727.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-24 123120.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-24 140133.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-24 140341.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-24 140838.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-24 163020.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-26 120153.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-29 191825.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-29 202300.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-29 212525.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 154942.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 155432.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 155811.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 162340.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 164327.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 164827.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 165324.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-09-30 170713.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-02 113821.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-03 010639.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-03 011550.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-03 013053.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-03 031238.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-03 162509.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-12 015526.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-14 153734.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-14 154429.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-14 162715.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-14 163953.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-14 173132.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-14 183640.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-14 200025.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-15 002733.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-16 110142.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-18 041203.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-19 094738.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-20 120352.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-20 193808.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-25 125014.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-26 093216.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-10-29 112909.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-11-01 023001.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-11-04 202446.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-11-05 182352.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-11-22 221536.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-11-23 221016.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-11-25 214956.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-11-29 165450.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-03 135538.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-03 182218.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-07 215646.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-09 001428.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-09 030400.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-10 163825.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-10 215944.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-11 000048.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-14 000912.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-18 153637.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-18 182050.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-18 190150.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-21 171155.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-22 205614.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-22 205700.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-22 210744.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2024-12-22 210855.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-01 204431.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-01 204455.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-01 230438.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 003244.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 004445.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 004455.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 010147.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 112249.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 115123.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 121321.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-02 134437.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-03 000003.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-03 195616.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-04 133104.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-06 201451.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-07 020103.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-08 153309.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-08 174934.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-08 210751.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-09 182438.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-14 183638.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-15 153110.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-15 164728.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-19 155159.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-20 172204.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-20 193756.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-21 153057.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-28 165248.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-29 134913.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-29 172045.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-29 172100.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-31 163258.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-31 170917.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-01-31 190938.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-01 154019.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-04 141800.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-07 171705.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-08 141731.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-13 184601.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-13 190259.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-14 154753.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-14 154804.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-14 154810.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-14 155042.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-16 135521.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-16 180423.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-16 194848.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-18 081953.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-18 141631.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-19 144330.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-19 150147.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-19 151226.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-02-27 202618.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-01 125619.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-01 125634.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-02 203419.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-03 214725.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-03 214826.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-04 220806.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-04 220815.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-06 094636.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-07 210902.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-08 190542.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-09 135217.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-10 202458.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-10 202611.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-11 171224.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-11 171238.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-13 195238.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-16 200105.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-17 195319.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-19 185608.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-19 185815.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 085717.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 085755.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 085838.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 085904.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 090007.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 090035.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 090109.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 090136.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 091545.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 091856.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 091927.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 092043.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 092302.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 092416.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 092441.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 095204.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 095244.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 100401.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 100743.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 102050.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 102211.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 102442.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 103659.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 104017.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 104317.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 104453.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 111018.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 111121.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 112120.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Test Solution\Screenshot 2025-03-20 112431.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Testing\Output\Extracted\" />
+      <Folder Include="Testing\Output\Output\" />
+    </ItemGroup>
 </Project>
