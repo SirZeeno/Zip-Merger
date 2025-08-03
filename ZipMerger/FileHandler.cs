@@ -76,32 +76,37 @@ public static class FileHandler
     }
 
     /// <summary>
-    /// Merges the selected Folders into a single Folder and deduplicates the files.
-    /// Source Directory 1 will be merged into Source Directory 2
+    /// Merges the selected Folders into a single Folder and deduplicates the files by simple overwriting.
     /// </summary>
-    /// <param name="sourceDirectory1">Source Directory 1</param>
-    /// <param name="sourceDirectory2">Source Directory 2</param>
+    /// <param name="sourceDirectories">List of source directories</param>
     /// <param name="mainViewModel">Main View Model</param>
-    public static void MergeFolders(string sourceDirectory1, string sourceDirectory2, MainViewModel mainViewModel)
+    public static string MergeFolders(List<string> sourceDirectories, MainViewModel mainViewModel)
     {
-        // Get all files from both directories
-        var files1 = Directory.GetFiles(sourceDirectory1, "*.*", SearchOption.AllDirectories);
-        var files2 = Directory.GetFiles(sourceDirectory2, "*.*", SearchOption.AllDirectories);
-
-        ProgressBarSettings progressBarSettings = new ProgressBarSettings(files1.Length);
-        mainViewModel.AddProgressItem(progressBarSettings);
-
-        HashSet<string> uniqueFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase); // Case-insensitive hash set for unique hashes
-        
-        foreach (var file in files1)
+        string folderMergeDirectory = sourceDirectories[0];
+        for (int i = 1; i < sourceDirectories.Count; i++)
         {
-            string hash = HelperClass.GetMd5Checksum(file);
-            if (!uniqueFiles.Add(hash)) continue;
-            string destinationPath = Path.Combine(sourceDirectory2, Path.GetFileName(file));
-            File.Copy(file, destinationPath, true);
-            progressBarSettings.ProgressValue++;
+            // Get all files from the indexed directory [i]
+            var files1 = Directory.GetFiles(sourceDirectories[i], "*.*", SearchOption.AllDirectories);
+
+            ProgressBarSettings progressBarSettings = new ProgressBarSettings(files1.Length);
+            mainViewModel.AddProgressItem(progressBarSettings);
+
+            HashSet<string> uniqueFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase); // Case-insensitive hash set for unique hashes
+        
+            foreach (var file in files1)
+            {
+                string hash = HelperClass.GetMd5Checksum(file);
+                if (!uniqueFiles.Add(hash)) continue;
+                string destinationPath = Path.Combine(folderMergeDirectory, Path.GetFileName(file));
+                File.Copy(file, destinationPath, true);
+                progressBarSettings.ProgressValue++;
+            }
+        
+            mainViewModel.AppendToConsole(ConsoleExt.WriteLineWithStepPretext($"Merged folders: '{sourceDirectories[i]}' into '{folderMergeDirectory}'", ConsoleExt.CurrentStep.MergingFiles).output);
+            
+            mainViewModel.CurrentPass++;
         }
         
-        ConsoleExt.WriteLineWithPretext($"Merged folders: '{sourceDirectory1}' into '{sourceDirectory2}'");
+        return folderMergeDirectory;
     }
 }

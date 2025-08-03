@@ -83,7 +83,7 @@
     <StackPanel Grid.Row="2" Spacing="5" VerticalAlignment="Top">
       <Separator HorizontalAlignment="Stretch"/>
       <Grid HorizontalAlignment="Stretch" ColumnDefinitions="Auto,Auto,*,Auto" Margin="0,0,0,5">
-        <TextBlock Grid.Column="0" Text="Output Folder: "  VerticalAlignment="Center" Foreground="Gray"/>
+        <TextBlock Grid.Column="0" Text="Output Folder: "  VerticalAlignment="Center" Foreground="{StaticResource DarkGreyTextColor}"/>
         <TextBlock Grid.Column="1" Text="{CompiledBinding OutputPath}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Button Grid.Column="2" Command="{CompiledBinding BrowseFolderCommand}" Margin="0,0,5,0" HorizontalAlignment="Right" VerticalAlignment="Center">
           <StackPanel Orientation="Horizontal">
@@ -91,14 +91,14 @@
             <TextBlock Text="Select Output Folder" />
           </StackPanel>
         </Button>
-        <ComboBox Grid.Column="3" Margin="0,0,5,0" ItemsSource="{CompiledBinding Options}" SelectedItem="{Binding SelectedOption, Mode=TwoWay}" IsEnabled="{CompiledBinding IsCompressionLevelEnabled}">
+        <ComboBox Grid.Column="3" Margin="0,0,5,0" ItemsSource="{CompiledBinding Options}" SelectedItem="{Binding SelectedCompressionOption, Mode=TwoWay}" IsEnabled="{CompiledBinding IsCompressionLevelEnabled}">
           
         </ComboBox>
       </Grid>
       <Separator HorizontalAlignment="Stretch"/>
     </StackPanel>
     
-    <StackPanel Grid.Row="3" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch"> <!-- Progress Bar Stack Panel -->
+    <StackPanel Grid.Row="3" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch" Spacing="5"> <!-- Progress Bar Stack Panel -->
       <StackPanel Orientation="Horizontal">
         <TextBlock Margin="0,0,10,0">
           <Run Text="Passes: " />
@@ -125,17 +125,28 @@
       </ItemsControl>
     </StackPanel>
     
-    <TextBox Grid.Row="4" x:Name="ConsoleBox"
+    <Grid Grid.Row="4" VerticalAlignment="Stretch" RowDefinitions="Auto,*">
+      <TextBlock Grid.Row="0" Text="Console Output" Foreground="{StaticResource DarkGreyTextColor}" FontWeight="Bold" />
+      <TextBox Grid.Row="1" x:Name="ConsoleBox"
                Text="{Binding ConsoleOutput}"
                AcceptsReturn="True"
                IsReadOnly="True"
                Focusable="False"
-               IsHitTestVisible="False"
                BorderThickness="0"
                Cursor="Arrow"
                FontFamily="Consolas"
                FontSize="13"
-               VerticalAlignment="Stretch"/>
+               VerticalAlignment="Stretch"
+               Background="{StaticResource TextBoxBackground}">
+        <TextBox.Styles>
+          <!-- PointerOver State--> 
+          <Style Selector="TextBox:pointerover /template/ Border#PART_BorderElement"> 
+            <Setter Property="BorderBrush" Value="{StaticResource TextBoxBackground}"/> 
+            <Setter Property="Background" Value="{StaticResource TextBoxBackground}" /> 
+          </Style> 
+        </TextBox.Styles>
+      </TextBox>
+    </Grid>
     
     <StackPanel Grid.Row="5">
       <TextBlock Text="ZipMerger v1.0" HorizontalAlignment="Center" FontSize="10" Foreground="DimGray"/>

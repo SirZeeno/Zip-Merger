@@ -25,19 +25,32 @@ public abstract class HelperClass
     {
         var files1 = Directory.GetFiles(directory1, "*.*", SearchOption.AllDirectories);
         var files2 = Directory.GetFiles(directory2, "*.*", SearchOption.AllDirectories);
+        
         var uniqueFiles1 = new HashSet<string>(StringComparer.OrdinalIgnoreCase); // Case-insensitive hash set for unique hashes
-        var uniqueFiles2 = new HashSet<string>(StringComparer.OrdinalIgnoreCase); // Case-insensitive hash set for unique hashes
+        var uniqueFiles2 = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        
         foreach (var file in files1)
         {
             string hash = GetMd5Checksum(file);
-            if (!uniqueFiles1.Add(hash)) continue;
+            if (!uniqueFiles1.Add(hash))
+            {
+            }
         }
         foreach (var file in files2)
         {
             string hash = GetMd5Checksum(file);
-            if (!uniqueFiles2.Add(hash)) continue;
+            if (!uniqueFiles2.Add(hash))
+            {
+            }
         }
 
         return uniqueFiles1.SetEquals(uniqueFiles2);
+    }
+    
+    public static bool CompareFiles(string file1, string file2)
+    {
+        string hash1 = GetMd5Checksum(file1);
+        string hash2 = GetMd5Checksum(file2);
+        return hash1 == hash2;
     }
 }

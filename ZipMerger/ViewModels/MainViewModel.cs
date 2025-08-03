@@ -8,6 +8,7 @@ using System.Reactive;
 using System.Reactive.Linq;
 using System.Windows.Input;
 using ReactiveUI;
+using ZipMerger.Views;
 
 namespace ZipMerger.ViewModels;
 
@@ -65,7 +66,7 @@ public class MainViewModel : ViewModelBase
         set => this.RaiseAndSetIfChanged(ref _currentFile, value);
     }
     
-    public static CompressionLevel SelectedOption { get; set; }
+    public static CompressionLevel SelectedCompressionOption { get; set; }
     public IEnumerable<CompressionLevel> Options { get; } = Enum.GetValues(typeof(CompressionLevel)).Cast<CompressionLevel>();
     
     public double ProgressMaxValue
@@ -111,6 +112,7 @@ public class MainViewModel : ViewModelBase
     public void AppendToConsole(string message)
     {
         ConsoleOutput += message + Environment.NewLine;
+        FileHandler.MainView.ScrollConsoleToEnd();
     }
 
     public MainViewModel()
@@ -118,7 +120,7 @@ public class MainViewModel : ViewModelBase
         IObservable<bool> canExecuteAdd = this.WhenAnyValue(vm => vm.PathTextBox, path => !string.IsNullOrEmpty(path));
         IObservable<bool> canExecuteMerge = this.WhenAnyValue(x => x.Items.Count).Select(count => count >= 2);
         OpenHyperlinkCommand = ReactiveCommand.Create<string>(url => Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true }));
-        StartMergeCommand = ReactiveCommand.Create(() => ZipHandler.StartExtractingAsync(SelectedPathDisplay.ToList(), this, OutputPath), canExecuteMerge);
+        StartMergeCommand = ReactiveCommand.Create(() => ZipHandler.StartZipMergeAsync(SelectedPathDisplay.ToList(), this, OutputPath), canExecuteMerge);
         BrowseFilesCommand = ReactiveCommand.Create(FileHandler.BrowseFiles);
         BrowseFolderCommand = ReactiveCommand.Create(() => FileHandler.BrowseFolders(this));
         AddPathToQueueCommand = ReactiveCommand.Create<string?>(path => FileHandler.AddPathToQueue(new ImportSettings(path), SelectedPathDisplay), canExecuteAdd);

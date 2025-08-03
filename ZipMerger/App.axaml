@@ -16,5 +16,13 @@
              
     <Application.Resources>
         <SolidColorBrush x:Key="BackgroundColor" Color="#191919" />
+        
+        <!-- Text Colors -->
+        <SolidColorBrush x:Key="LightGreyTextColor" Color="#a2a2a2" />
+        <SolidColorBrush x:Key="DarkGreyTextColor" Color="#727272" />
+        <SolidColorBrush x:Key="WhiteTextColor" Color="#ececec" />
+        
+        <!-- TextBox Colors -->
+        <SolidColorBrush x:Key="TextBoxBackground" Color="#272727" />
     </Application.Resources>
 </Application>

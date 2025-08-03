@@ -1,18 +1,10 @@
-﻿using System;
-using ReactiveUI;
+﻿using ReactiveUI;
 
 namespace ZipMerger;
 
 public class ImportSettings(string? selectedPath)
 {
     public string? SelectedPath { get; } = selectedPath;
-}
-
-public class OutputText(ConsoleExt.OutputType outputType, string? output, Exception exception)
-{
-    ConsoleExt.OutputType OutputType { get; } = outputType;
-    string? Output { get; } = output;
-    Exception Exception { get; } = exception;
 }
 
 public class ProgressBarSettings : ReactiveObject
