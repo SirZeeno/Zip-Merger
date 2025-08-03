@@ -11,5 +11,14 @@ A Work in progress multi-platform (as the name implies) Zip Merger. It has a sim
 > [!NOTE]
 > This is a passion project like most of my projects, meaning I work on this Project in my free time and will update and expand as much and soon as I can, please be patient with me :).
 
-# Work in progess!
+## Work in progess!
 I will add releases and documentation as soon as I got the program working at least on Linux and MacOS on top of the already working Windows version
+
+## Roadmap
+| Release Platforms | Supported |
+|-------------------|-----------|
+| Windows           | ✅        |
+| MacOS             | ❌ (Planned) |
+| Linux             | ❌ (Planned) |
+| Webapp            | ❌ (Planned) |
+
